@@ -1,0 +1,4 @@
+<div style="border: 1px black solid">
+  <div><ng-content select="[panel-header]"></ng-content><button (click)="expanded = !expanded;"><</button></div>
+  <div [hidden]="!expanded"><ng-content></ng-content></div>
+</div>

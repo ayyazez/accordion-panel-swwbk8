@@ -1,0 +1,16 @@
+<p>
+  Start editing to see some magic happen :)
+</p>
+<button (click)="toggleAll()">Expand/Collapse All</button>
+<pa-accordion>
+  <pa-accordion-panel (opened)="onOpened()">
+    <span panel-header>Operations</span>
+    <h4>Testing accordion 1</h4>
+  </pa-accordion-panel>
+  <pa-accordion-panel>
+    <span panel-header>Exposures</span>
+    <h4>Testing accordion 2</h4>
+    <button (click)="exposuresNext()">Next</button>
+  </pa-accordion-panel>
+  <ad-exposures-accordian-panel></ad-exposures-accordian-panel>
+</pa-accordion>
